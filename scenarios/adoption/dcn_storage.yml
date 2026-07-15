@@ -35,7 +35,7 @@ libvirt_manager_patch_layout:
     compute:
       amount: 0
     # Central HCI computes with Ceph (az0)
-    osp-compute:
+    osp-computes:
       <<: *osp_base_conf
       amount: "{{ [cifmw_libvirt_manager_compute_amount|int, 3] | max }}"
       extra_disks_num: 3
